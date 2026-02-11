@@ -1,7 +1,7 @@
 # Projeto: Inteligência de Dados no Retalho
 
 ## Sobre o Projeto
-- Este sistema foi desenvolvido por mim com o objetivo de criar uma solução robusta para o setor do retalho especializado. O foco principal é a análise holística do consumidor, cruzando dados transacionais e comportamentais com a dimensão emocional extraída através de inteligência artificial.
+- Este sistema foi desenvolvido com o objetivo de criar uma solução robusta para o setor do retalho especializado. O foco principal é a análise holística do consumidor, cruzando dados transacionais e comportamentais com a dimensão emocional extraída através de inteligência artificial.
 
 - Este trabalho foi inspirado e fundamentado nos princípios de Engenharia de Sistemas de Dados lecionados no Mestrado em Inteligênia Artificial, aplicando metodologias avançadas de integração de dados e análise de sentimentos para suporte à decisão.
 
@@ -34,7 +34,7 @@ graph TD
 ```
 
 ## Objetivos Implementados
-- **Arquitetura Centralizada**: Implementação de um repositório único de verdade para dados provenientes de fontes heterogéneas.
+- **Arquitetura Centralizada**: Implementação de um repositório único para dados provenientes de fontes heterogéneas.
 - **IA e Sentimentos**: Extração de emoções e níveis de satisfação a partir de avaliações e comentários dos clientes para enriquecer os perfis tradicionais.
 - **Modelação para Decisão**: Criação de indicadores de desempenho (KPIs) para personalização de ofertas e previsão de fidelidade.
 
@@ -45,7 +45,7 @@ graph TD
 - **Visualização**: Dashboards desenhados para diversos agentes de decisão empresariais.
 
 ### Stack Tecnológica
-- **Linguagem**: Python 3.12 (otimizado para compatibilidade com bibliotecas de Deep Learning).
+- **Linguagem**: Python 3.12.
 - **IA/NLP**: Hugging Face Transformers (`DistilBERT` fine-tuned para análise de sentimentos).
 - **Processamento de Dados**: Pandas para ETL e integração de fontes heterogéneas.
 - **Armazenamento**: SQLite como Repositório Centralizado (Data Warehouse).
