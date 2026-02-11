@@ -31,6 +31,7 @@ graph TD
     E --> D
     D --> G
     G --> H
+```
 
 ## Objetivos Implementados
 - **Arquitetura Centralizada**: Implementação de um repositório único de verdade para dados provenientes de fontes heterogéneas.
