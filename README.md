@@ -48,15 +48,15 @@ graph TD
 
 ### Technology Stack
 - **Language**: Python.
-- **AI/NLP**: Hugging Face Transformers (`DistilBERT` fine-tuned para análise de sentimentos).
-- **Data Processing**: Pandas para ETL e integração de fontes heterogéneas.
-- **Storage**: SQLite como Repositório Centralizado (Data Warehouse).
-- **Visualisation**: Matplotlib para geração de dashboards analíticos.
+- **AI/NLP**: Hugging Face Transformers (DistilBERT fine-tuned for sentiment analysis).
+- **Data Processing**: Pandas for ETL and integration of heterogeneous sources.
+- **Storage**: SQLite as a Centralised Repository (Data Warehouse).
+- **Visualisation**: Matplotlib for generating analytical dashboards.
 
 ### Engineering Highlights
-- **Scalable Ingestion**: Utilização de Streaming via Hugging Face Hub para processar grandes volumes de texto.
-- **Synthetic Key**: Implementação de uma lógica de integração por índice para correlacionar datasets sem chaves primárias comuns explícitas.
-- **Resilience**: Pipeline desenhado para adaptação rápida a diferentes fontes de dados.
+- **Scalable Ingestion**: Use of Streaming via Hugging Face Hub to process large volumes of text.
+- **Synthetic Key**: Implementation of index-based integration logic to correlate datasets without explicit common primary keys.
+- **Resilience**: Pipeline designed for rapid adaptation to different data sources.
 
 ## Results and KPIs
 The system transforms raw data into actionable indicators:
