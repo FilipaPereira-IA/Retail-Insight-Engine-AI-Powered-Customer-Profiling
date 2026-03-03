@@ -1,28 +1,30 @@
-# Projeto: Inteligência de Dados no Retalho
+# Project: Retail Data Intelligence
 
-## Sobre o Projeto
-- Este sistema foi desenvolvido com o objetivo de criar uma solução para o setor do retalho. O foco principal é a análise holística do consumidor, cruzando dados transacionais e comportamentais com a dimensão emocional extraída através de inteligência artificial.
+## About the Project
+This system was developed to provide a comprehensive solution for the retail sector.
 
-- Este trabalho foi inspirado e fundamentado nos princípios de Engenharia de Sistemas de Dados lecionados no Mestrado em Inteligênia Artificial, aplicando metodologias de integração de dados e análise de sentimentos para suporte à decisão.
+The primary focus is on holistic consumer analysis, cross-referencing transactional and behavioural data with emotional dimensions extracted through Artificial Intelligence.
 
-## Arquitetura do Sistema
-Representação visual do pipeline que desenvolvi:
+This work was inspired by and grounded in the principles of Data Systems Engineering taught in the Master's in Artificial Intelligence, applying data integration methodologies and sentiment analysis for decision support.
+
+## System Architecture
+Visual representation of the developed pipeline:
 
 ```mermaid
 graph TD
-    subgraph Fontes_de_Dados
-        A[CSV: Comportamento Cliente]
+    subgraph Data_Sources
+        A[CSV: Customer Behaviour]
         B[API: Hugging Face Streaming]
     end
 
-    subgraph Processamento_IA
+    subgraph AI_Processing
         D{Python}
-        E[Modelo NLP: DistilBERT]
+        E[NLP Model: DistilBERT]
     end
 
-    subgraph Armazenamento_e_Saida
+    subgraph Storage_and_Output
         G[(SQLite Data Warehouse)]
-        H[Insights e Dashboards]
+        H[Insights and Dashboards]
     end
 
     A --> D
@@ -33,31 +35,31 @@ graph TD
     G --> H
 ```
 
-## Objetivos Implementados
-- **Arquitetura Centralizada**: Implementação de um repositório único para dados provenientes de fontes heterogéneas.
-- **IA e Sentimentos**: Extração de emoções e níveis de satisfação a partir de avaliações e comentários dos clientes para enriquecer os perfis tradicionais.
-- **Modelação para Decisão**: Criação de indicadores de desempenho (KPIs) para personalização de ofertas e previsão de fidelidade.
+## Implemented Objectives
+- **Centralised Architecture:** Implementation of a single repository for data originating from heterogeneous sources.
+- **AI & Sentiment Analysis:** Extraction of emotions and satisfaction levels from customer reviews and comments to enrich traditional profiles.
+- **Decision Modelling:** Creation of Key Performance Indicators (KPIs) for personalised offers and loyalty forecasting.
 
-## Arquitetura Técnica
-- **Dados Estruturados**: Utilização do Customer Behaviour Dataset para caracterização demográfica e transacional.
-- **Dados Não Estruturados**: Integração de avaliações da Amazon (via Hugging Face) para análise de opiniões.
-- **Pipeline de IA**: Processamento de linguagem natural (NLP) para transformar texto subjetivo em dados quantitativos de sentimento.
-- **Visualização**: Dashboards desenhados para decisão empresariais.
+## Technical Architecture
+- **Structured Data:** Utilisation of the Customer Behaviour Dataset for demographic and transactional characterisation.
+- **Unstructured Data:** Integration of Amazon reviews (via Hugging Face) for opinion analysis.
+- **AI Pipeline:** Natural Language Processing (NLP) to transform subjective text into quantitative sentiment data.
+- **Visualisation:** Dashboards designed for business decision-making.
 
-### Stack Tecnológica
-- **Linguagem**: Python.
-- **IA/NLP**: Hugging Face Transformers (`DistilBERT` fine-tuned para análise de sentimentos).
-- **Processamento de Dados**: Pandas para ETL e integração de fontes heterogéneas.
-- **Armazenamento**: SQLite como Repositório Centralizado (Data Warehouse).
-- **Visualização**: Matplotlib para geração de dashboards analíticos.
+### Technology Stack
+- **Language**: Python.
+- **AI/NLP**: Hugging Face Transformers (`DistilBERT` fine-tuned para análise de sentimentos).
+- **Data Processing**: Pandas para ETL e integração de fontes heterogéneas.
+- **Storage**: SQLite como Repositório Centralizado (Data Warehouse).
+- **Visualisation**: Matplotlib para geração de dashboards analíticos.
 
-### Destaques de Engenharia
-- **Ingestão Escalável**: Utilização de Streaming via Hugging Face Hub para processar grandes volumes de texto.
-- **Chave Sintética**: Implementação de uma lógica de integração por índice para correlacionar datasets sem chaves primárias comuns explícitas.
-- **Resiliência**: Pipeline desenhado para adaptação rápida a diferentes fontes de dados.
+### Engineering Highlights
+- **Scalable Ingestion**: Utilização de Streaming via Hugging Face Hub para processar grandes volumes de texto.
+- **Synthetic Key**: Implementação de uma lógica de integração por índice para correlacionar datasets sem chaves primárias comuns explícitas.
+- **Resilience**: Pipeline desenhado para adaptação rápida a diferentes fontes de dados.
 
-## Resultados e KPIs
-O sistema transforma dados brutos em indicadores acionáveis:
-- **Segmentação por Sentimento**: Identificação automática de polaridade (Positive/Negative).
-- **Métricas Demográficas**: Cálculo de idade média por nível de satisfação (Ex: Segmento de 43 anos com maior taxa de aprovação).
-- **Distribuição de Género**: Mapeamento de padrões de crítica por perfil de cliente.
+## Results and KPIs
+The system transforms raw data into actionable indicators:
+- **Sentiment Segmentation:** Automatic identification of polarity (Positive/Negative).
+- **Demographic Metrics:** Calculation of average age per satisfaction level (e.g., 43-year-old segment with the highest approval rate).
+- **Gender Distribution:** Mapping of criticism patterns by customer profile.
