@@ -2,8 +2,8 @@ import pandas as pd
 from datasets import load_dataset
 from transformers import pipeline
 
-# 1. Ingestão escalável (Dataset moderno em formato Parquet)
-# Em vez do download manual, usamos a biblioteca "datasets" para streaming
+# 1. Ingestão escalável
+# Em vez do download manual, usei a biblioteca "datasets" para streaming
 print("A carregar dados de reviews (IMDb)...")
 # Usei um dataset de 10k
 reviews_ds = load_dataset("stanfordnlp/imdb", split='train', streaming=True)
@@ -55,7 +55,7 @@ conn = sqlite3.connect('retail_warehouse.db')
 # Guardar o df_final na tabela "perfil_clientes"
 df_final.to_sql('perfil_clientes', conn, if_exists='replace', index=False)
 conn.close()
-print("Dados guardados com sucesso no ficheiro: retail_warehouse.db")
+print("Dados guardados no ficheiro: retail_warehouse.db")
 
 # 6. Suporte à decisão (KPIs)
 print("\n--- RELATÓRIO DE INSIGHTS ---")
@@ -77,3 +77,4 @@ plt.xlabel('Género')
 plt.ylabel('Número de clientes')
 plt.legend(title='Sentimentos')
 plt.show()
+
