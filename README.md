@@ -1,12 +1,12 @@
 # Projeto: Inteligência de Dados no Retalho
 
 ## Sobre o Projeto
-- Este sistema foi desenvolvido com o objetivo de criar uma solução robusta para o setor do retalho especializado. O foco principal é a análise holística do consumidor, cruzando dados transacionais e comportamentais com a dimensão emocional extraída através de inteligência artificial.
+- Este sistema foi desenvolvido com o objetivo de criar uma solução para o setor do retalho. O foco principal é a análise holística do consumidor, cruzando dados transacionais e comportamentais com a dimensão emocional extraída através de inteligência artificial.
 
-- Este trabalho foi inspirado e fundamentado nos princípios de Engenharia de Sistemas de Dados lecionados no Mestrado em Inteligênia Artificial, aplicando metodologias avançadas de integração de dados e análise de sentimentos para suporte à decisão.
+- Este trabalho foi inspirado e fundamentado nos princípios de Engenharia de Sistemas de Dados lecionados no Mestrado em Inteligênia Artificial, aplicando metodologias de integração de dados e análise de sentimentos para suporte à decisão.
 
 ## Arquitetura do Sistema
-Aqui está a representação visual do pipeline que desenvolvi:
+Representação visual do pipeline que desenvolvi:
 
 ```mermaid
 graph TD
