@@ -42,7 +42,7 @@ df_reviews['customer_id'] = range(len(df_reviews))
 # Uni tudo num único repositório
 df_final = pd.merge(df_comportamento, df_reviews, on='customer_id')
 
-print("Integração concluída com sucesso!")
+print("Integração concluída!")
 # Mostrar as primeiras linhas para confirmar que a idade e o sentimento estão na mesma tabela
 print(df_final[['customer_id', 'Age', 'sentimento_predito']].head())
 
@@ -77,4 +77,5 @@ plt.xlabel('Género')
 plt.ylabel('Número de clientes')
 plt.legend(title='Sentimentos')
 plt.show()
+
 
