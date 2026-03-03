@@ -22,7 +22,7 @@ graph TD
 
     subgraph Armazenamento_e_Saida
         G[(SQLite Data Warehouse)]
-        H[Insights & Dashboards]
+        H[Insights e Dashboards]
     end
 
     A --> D
